@@ -23,16 +23,16 @@ body {
 	
 	/*centers text in middle of page*/
 	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 	text-align: center;
 	font-family: 'Rustproof', helvetica, san-serif;
 	font-size: 100px;
 
 	/*adds outline to font*/
-	-webkit-text-stroke-width: 1px;
-   	-webkit-text-stroke-color: white;
+	/*-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;*/
 }
 
 /*----------------------------------------------------------------------*/
