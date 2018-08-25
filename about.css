@@ -9,32 +9,37 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: transparent;  /*allows for sketch.js to show thru*/
+    background-color: black;  /*allows for sketch.js to show thru*/
+
 }
 /*this imports .ttf font as separate file*/
 @font-face {
-	font-family: 'Rustproof';
-	src: url(fonts/rustproofbody.ttf);
+  font-family: 'zekton';
+  src: url(fonts/zekton-rg.ttf);
 }
 /*----------------------------------------------------------------------*/
-/*contains centered box*/
-#center {
-	position: fixed;
-	
-	/*centers text in middle of page*/
-	top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-	text-align: center;
-	font-family: 'Rustproof', helvetica, san-serif;
-	font-size: 100px;
-
-	/*adds outline to font*/
-	/*-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;*/
+.container {
+  background-color: transparent;
+  padding-left: 5%;
+  padding-top: 5%;
 }
-
+p {
+  text-align: left;
+  font-family: zekton, serif;
+  font-size: 25px;
+  color: white;
+  margin: 0px;
+}
+a {
+  text-align: left;
+  font-family: zekton, serif;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFBD33;
+}
 /*----------------------------------------------------------------------*/
 /*these are the keyframes for fade in all browsers*/
 @keyframes fadein {

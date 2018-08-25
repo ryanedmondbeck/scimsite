@@ -16,6 +16,10 @@ body {
 	font-family: 'Rustproof';
 	src: url(fonts/rustproofbody.ttf);
 }
+/*@font-face {
+  font-family: 'zekton';
+  src: url(fonts/zekton-rg.ttf);
+}*/
 /*----------------------------------------------------------------------*/
 /*this is the scim logo sideways*/
 h1 {
