@@ -9,8 +9,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: black;  /*allows for sketch.js to show thru*/
-
+    background-color: transparent;  /*allows for sketch.js to show thru*/
 }
 /*this imports .ttf font as separate file*/
 @font-face {
@@ -19,18 +18,23 @@ body {
 }
 /*----------------------------------------------------------------------*/
 .container {
+  position: fixed;
   background-color: transparent;
   padding-left: 5%;
   padding-top: 5%;
+  display: inline-block;
 }
 p {
+  /*background-color: transparent;*/
   text-align: left;
   font-family: zekton, serif;
   font-size: 25px;
   color: white;
   margin: 0px;
+
 }
 a {
+  /*background-color: transparent;*/
   text-align: left;
   font-family: zekton, serif;
   font-size: 30px;
