@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <!-- math.js -->
+    <script type="text/javascript" src="https://unpkg.com/mathjs@5.2.3/dist/math.js"></script>
+    <!-- p5 library scripts -->
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <!-- main script -->
+    <script src="cipher.js"></script>
+  </head>
+  <body>
+    <h3>Musical Cipher</h3>
+    <p>Select a Cipher and then click 'Toggle Playback' to start and stop melody.</p>
+    <div>
+         <!-- these buttons select the appropriate ciphers -->
+        <button onclick="select_none()">No Cipher</button>
+        <button onclick="select_caesar()">Caesar Cipher</button>
+        <button onclick="select_vigenere()">Vigenère Cipher</button>
+        <button onclick="select_hill()">Hill Cipher</button>
+    </div>
+    <p>Enter a new message to be melodically encrypted. Resubmit the message if changing the cipher.</p>
+    <div>
+        <button onclick="toggle()">Toggle Playback</button>
+        <input type="text" id="textfield">
+        <button onclick="getVal()">Submit Message</button>
+    </div>
+   
+
+
+  </body>
+</html>
