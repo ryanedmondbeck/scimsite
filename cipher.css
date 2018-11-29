@@ -68,16 +68,17 @@ html, body {
 div {
 	display: block;
 }
-.cbutt {
+
+.cipherbutton {
 	width: 25%;
 	padding: 0;
 	border: 0;
 	height: 100%;
 	background-color: black;
-	color: green;
+	color: white;
 	font-family: 'zekton';
-
 }
+
 .cipherbar {
 	padding-top: 10%;
 	height: 6%;
@@ -91,7 +92,7 @@ div {
 	border: 0;
 	height: 100%;
 	background-color: black;
-	color: green;
+	color: white;
 	font-family: 'zekton';
 }
 .submitbutton {
@@ -100,7 +101,7 @@ div {
 	border: 0;
 	height: 100%;
 	background-color: black;
-	color: green;
+	color: white;
 	font-family: 'zekton';
 	border: 0;
 }
@@ -110,12 +111,14 @@ input {
 	margin: 0;
 	height: 100%;
 	background-color: black;
-	color: green;
+	color: white;
 	font-family: 'zekton';
 }
 .in {
 	width: 95%;
 	padding-left: 5%;
+	outline-color: white;
+	outline: 1px;
 }
 
 
