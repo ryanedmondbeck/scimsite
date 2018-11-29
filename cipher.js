@@ -34,6 +34,7 @@ function caesar_cipher(x) {
   x = (x + key) % 26;
   return x;
 }
+//_______________________________________
 function vigenere_cipher(array_of_chars) {
   scaleArray.length = 0;
   var key_word = prompt("Please enter a keyword to be used with the Vigenère Cipher:")
@@ -63,23 +64,42 @@ function vigenere_cipher(array_of_chars) {
     kw_index++;
   }
 }
+//_______________________________________
 function hill_cipher(array_of_chars) {
   scaleArray.length = 0;
-  var key_matrix = [[1,1,1],[2,2,2],[3,3,3]];
+  var key_matrix = [[1,2,3],[1,2,3],[1,2,3]];
   console.log("key matrix", key_matrix);
-  var testm = [1,1,1];
-  while (array_of_chars != 0) {
+  var three = [];
+  var x;
+  var num_array = [];
+  for (var i = 0; i < array_of_chars.length; i++) {
+    x = array_of_chars[i].charCodeAt(0);
+    x = x - 97; //create numbers 0 - 25
+    num_array.push(x);
+  }
+  if (num_array.length % 3 == 1) {
+    num_array.push(0);
+    num_array.push(0);
+  }
+  if (num_array.length % 3 == 2) {
+    num_array.push(0);
+  }
+  // console.log("num_array before", num_array);
+  while (array_of_chars.length != 0) {
     for (var i = 0; i < 3; i++) {
-      
+      three.push(num_array.shift());
+      array_of_chars.shift();
+      // console.log("three", three);
     }
-
-    var result = []
-    for (var i = 0; i < 3; i++) {
-      console.log("matrix i", key_matrix[i][0], key_matrix[i][1], key_matrix[i][2]);
-      x = (testm[i] * key_matrix[i][0]) + (testm[i] * key_matrix[i][1]) + (testm[i] * key_matrix[i][2]);
-      result.push(x);
+    for (var i = 2; i > -1; i--) {
+      x = (three[i] * key_matrix[0][i]) + (three[i] * key_matrix[1][i]) + (three[i] * key_matrix[2][i]);
+      three.pop();
+      // console.log("x", x);
+      x = x % 25;
+      x = mapping(x);
+      x = freq_conversion(x);
+      scaleArray.push(x);
     }
-    console.log("result", result);
   }
 }
 //___________________________________________________________________________
