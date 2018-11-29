@@ -68,7 +68,12 @@ html, body {
 div {
 	display: block;
 }
-
+input:focus {
+    outline:none;
+}
+button:focus {
+	outline:none;
+}
 .cipherbutton {
 	width: 25%;
 	padding: 0;
@@ -106,13 +111,14 @@ div {
 	border: 0;
 }
 input {
-	width: 100%%
+	width: 99%;
 	padding: 0;
 	margin: 0;
 	height: 100%;
 	background-color: black;
 	color: white;
 	font-family: 'zekton';
+	border: none;
 }
 .in {
 	width: 95%;
