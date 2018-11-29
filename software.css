@@ -28,11 +28,12 @@ body {
 
 	text-align: center;
 	font-family: 'Rustproof', helvetica, san-serif;
-	font-size: 100px;
+	font-size: 50px;
+  text-decoration: none;
 
-	/*adds outline to font*/
+	/*adds outline to font*//*
 	-webkit-text-stroke-width: 1px;
-   	-webkit-text-stroke-color: white;
+   	-webkit-text-stroke-color: white;*/
 }
 
 /*----------------------------------------------------------------------*/
