@@ -20,16 +20,16 @@
     <!-- <p>Select a Cipher and then click 'Toggle Playback' to start and stop melody.</p> -->
     <div class="cipherbar">
          <!-- these buttons select the appropriate ciphers -->
-        <button onclick="select_none(); nClick();" class="cipherbutton" id="n">NO CIPHER</button><!--
-        --><button onclick="select_caesar(); cClick();"  class="cipherbutton" id="c">CAESAR CIPHER</button><!--
-        --><button onclick="select_vigenere(); vClick();"  class="cipherbutton" id="v">VIGEN&egrave;RE CIPHER</button><!--
-        --><button onclick="select_hill(); hClick();"  class="cipherbutton" id="h">HILL CIPHER</button>
+        <button onclick="select_none(); nClick(); getVal();" class="cipherbutton" id="n">NO CIPHER</button><!--
+        --><button onclick="select_caesar(); cClick(); getVal();"  class="cipherbutton" id="c">CAESAR CIPHER</button><!--
+        --><button onclick="select_vigenere(); vClick(); getVal();"  class="cipherbutton" id="v">VIGEN&egrave;RE CIPHER</button><!--
+        --><button onclick="select_hill(); hClick(); getVal();"  class="cipherbutton" id="h">HILL CIPHER</button>
     </div>
     <div class="bar">
         <button onclick="toggle()" class="togglebutton">TOGGLE PLAYBACK</button>
     </div>
     <div class="bar">
-        <input type="text" id="textfield" class="in" placeholder="ENTER YOUR TEXT HERE" onchange="getVal()">
+        <input type="text" id="textfield" class="in" placeholder="ENTER YOUR TEXT HERE" onkeyup="getVal()" ="getVal()">
     </div>
 
 
