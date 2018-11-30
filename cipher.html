@@ -22,15 +22,15 @@
          <!-- these buttons select the appropriate ciphers -->
         <button onclick="select_none(); nClick();" class="cipherbutton" id="n">NO CIPHER</button><!--
         --><button onclick="select_caesar(); cClick();"  class="cipherbutton" id="c">CAESAR CIPHER</button><!--
-        --><button onclick="select_vigenere(); vClick();"  class="cipherbutton" id="v">VIGEN&egrave;R CIPHER</button><!--
+        --><button onclick="select_vigenere(); vClick();"  class="cipherbutton" id="v">VIGEN&egrave;RE CIPHER</button><!--
         --><button onclick="select_hill(); hClick();"  class="cipherbutton" id="h">HILL CIPHER</button>
     </div>
     <div class="bar">
         <button onclick="toggle()" class="togglebutton">TOGGLE PLAYBACK</button><!--
-        --><button onclick="getVal()" class="submitbutton">SUBMIT MESSAGE</button>
+        --><button class="submitbutton">SUBMIT MESSAGE</button>
     </div>
     <div class="bar">
-        <input type="text" id="textfield" class="in" placeholder="ENTER YOUR TEXT HERE">
+        <input type="text" id="textfield" class="in" placeholder="ENTER YOUR TEXT HERE" onchange="getVal()" ="getVal()>
     </div>
 
 
