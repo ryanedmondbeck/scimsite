@@ -110,24 +110,6 @@ button:focus {
 .bar {
 	height: 6%;
 }
-.togglebutton {
-	width: 50%;
-	padding: 0;
-	border: 0;
-	height: 100%;
-	background-color: black;
-	color: white;
-	font-family: 'zekton';
-	-webkit-transition: color 1s; 
-    transition: color 1s;
-    -webkit-transition: letter-spacing 1s;
-    transition: letter-spacing 1s;
-    transition-timing-function: ease-in-out;
-}
-.togglebutton:hover {
-    color: red;
-    letter-spacing: 3px;
-}
 input {
 	width: 99%;
 	padding: 0;

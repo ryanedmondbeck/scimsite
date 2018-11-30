@@ -1,5 +1,5 @@
 var osc, envelope, fft;
-var scaleArray = [110, 147, 220, 262, 370, 587, 880, 1175]; //default notes that play
+var scaleArray = []; //default notes that play
 var note = 0;
 var STARTSTOP = false;
 var cipher_choice = 0;  
@@ -228,6 +228,7 @@ function mapping(x) {
     return x;
 }
 //___________________________________________________________________________
+// p5.js and p5.sound
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight/4);
 
@@ -242,7 +243,7 @@ function setup() {
   fft = new p5.FFT();
   noStroke();
 }
-
+//this is a loop 
 function draw() {
   background(0);
 
@@ -261,7 +262,7 @@ function draw() {
 }
 
 function play_sequence() {
-  if (STARTSTOP == true) {
+  if (scaleArray.length != 0) {
     // osc.start();
     if (frameCount % 60 == 0 || frameCount % 30 == 0  || frameCount == 1) {
       var freqValue = scaleArray[note];
