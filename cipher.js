@@ -4,6 +4,7 @@ var note = 0;
 var STARTSTOP = false;
 var cipher_choice = 0;  
 var key;
+var key_word;
 
 function toggle() {
   STARTSTOP = !STARTSTOP;
@@ -23,6 +24,8 @@ function select_caesar() {
 function select_vigenere() {
   cipher_choice = 2;
   console.log("cipher choice", cipher_choice);
+  key_word = prompt("Please enter a keyword to be used with the Vigenere Cipher:")
+  console.log("chosen keyword", key_word);
 }
 function select_hill() {
   cipher_choice = 3;
@@ -37,7 +40,6 @@ function caesar_cipher(x) {
 //_______________________________________
 function vigenere_cipher(array_of_chars) {
   scaleArray.length = 0;
-  var key_word = prompt("Please enter a keyword to be used with the Vigenère Cipher:")
   //turn keyword string into numbers
   key_word = key_word.toLowerCase();
   key_word = key_word.replace(/\W/g, '');
