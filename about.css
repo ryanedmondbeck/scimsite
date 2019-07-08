@@ -33,6 +33,16 @@ p {
   margin: 0px;
 
 }
+.resume {
+  /*background-color: transparent;*/
+  text-align: left;
+  font-family: zekton, serif;
+  font-size: 25px;
+  color: white;
+  margin: 0px;
+
+}
+
 a {
   /*background-color: transparent;*/
   text-align: left;
