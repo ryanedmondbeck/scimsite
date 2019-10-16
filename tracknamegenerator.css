@@ -1,3 +1,4 @@
+/*Ryan Beck 2019*/
 /*buttons*/
 /*-----------------------------------------------------------------*/
 /**
@@ -60,7 +61,6 @@ button,
   src: url(fonts/zekton-rg.ttf);
 }*/
 /*-----------------------------------------------------------------*/
-
 html, body { 
 	height: 100%; 
 	background-color: black;
@@ -73,18 +73,16 @@ input:focus {
 }
 button:focus {
 	outline:none;
+	background-color: black;
+	color: white;
+	border: 0;
+
 }
-/*#n, #c, #v, #h {
-	-webkit-transition: background-color 1s; 
-    transition: background-color 1s;
-    -webkit-transition: color 1s;  
-    transition: color 1s;
-}*/
-.cipherdescription {
+.trackname {
 	width: 100%;
 	padding: 0;
 	border: 0;
-	height: 10%;
+	height: 20%;
 	background-color: black;
 	color: white;
 	font-family: 'zekton';
@@ -93,59 +91,22 @@ button:focus {
     -webkit-transition: color 1s;  
     transition: color 1s;
 }
-.cipherbutton {
-	width: 25%;
-	padding: 0;
-	border: 0;
-	height: 100%;
-	background-color: black;
-	color: white;
-	font-family: 'zekton';
-	-webkit-transition: background-color 1s; 
-    transition: background-color 1s;
-    -webkit-transition: color 1s;  
-    transition: color 1s;
+/*----------------------------------------------------------------------*/
+/*contains centered box*/
+#center {
+	position: fixed;
+	
+	/*centers text in middle of page*/
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 
-    -webkit-transition: letter-spacing 1s;  
-    transition: letter-spacing 1s;
+	text-align: center;
+	font-size: 50px;
+  	text-decoration: none;
+
+	/*adds outline to font*//*
+	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: white;*/
 }
-.cipherbutton:hover {
-	letter-spacing: 2px;
-	background-color: darkgrey;
-	-webkit-transition: background-color 1s; 
-    transition: background-color 1s;
-}
-
-.cipherbar {
-	padding-top: 10%;
-	height: 6%;
-}
-
-.bar {
-	height: 6%;
-}
-input {
-	width: 99%;
-	padding: 0;
-	margin: 0;
-	height: 100%;
-	background-color: black;
-	color: white;
-	font-family: 'zekton';
-	border: none;
-}
-.in {
-	width: 95%;
-	padding-left: 5%;
-	outline-color: white;
-	outline: 1px;
-}
-
-
-
-
-
-
-
-
-
+/*----------------------------------------------------------------------*/
